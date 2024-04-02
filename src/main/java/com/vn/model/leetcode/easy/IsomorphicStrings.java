@@ -7,6 +7,8 @@ import com.vn.utils.TestHelper;
 import java.util.HashMap;
 import java.util.Map;
 
+
+
 public class IsomorphicStrings extends LeetCodeTest {
 
     public IsomorphicStrings() {
@@ -26,6 +28,10 @@ public class IsomorphicStrings extends LeetCodeTest {
 //        TestHelper.expect(false, isIsomorphic("foo", "bar"));
 //        TestHelper.expect(true, isIsomorphic("paper", "title"));
         TestHelper.expect(false, isIsomorphic("badc", "baba"));
+
+//        assertEquals(1, 1);
+//        assertTrue(1 == 1);
+
     }
 
     public boolean isIsomorphic(String s, String t) {

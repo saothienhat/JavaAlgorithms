@@ -1,5 +1,6 @@
 package com.vn.utils;
 
+import com.vn.model.ConsoleColors;
 import com.vn.model.leetcode.ListNode;
 
 public final class TestHelper {
@@ -19,23 +20,23 @@ public final class TestHelper {
     }
     public static void expect(int expectedValue, int actualValue) {
         if(expectedValue == actualValue) {
-            System.out.println("[PASS] Expected: " + expectedValue + " - Actual: " + actualValue);
+            System.out.println(ConsoleColors.GREEN + "[PASS] Expected: " + expectedValue + " - Actual: " + actualValue + ConsoleColors.RESET);
         } else {
-            System.err.println("[FAIL] Expected: " + expectedValue + " - Actual: " + actualValue);
+            System.err.println(ConsoleColors.RED + "[FAIL] Expected: " + expectedValue + " - Actual: " + actualValue + ConsoleColors.RESET);
         }
     }
     public static void expect(boolean expectedValue, boolean actualValue) {
         if(expectedValue == actualValue) {
-            System.out.println("[PASS] Expected: " + expectedValue + " - Actual: " + actualValue);
+            System.out.println(ConsoleColors.GREEN + "[PASS] Expected: " + expectedValue + " - Actual: " + actualValue + ConsoleColors.RESET);
         } else {
-            System.err.println("[FAIL] Expected: " + expectedValue + " - Actual: " + actualValue);
+            System.err.println(ConsoleColors.RED + "[FAIL] Expected: " + expectedValue + " - Actual: " + actualValue + ConsoleColors.RESET);
         }
     }
     public static void expect(String expectedValue, String actualValue) {
         if(expectedValue != null && expectedValue.equalsIgnoreCase(actualValue)) {
-            System.out.println("[PASS] Expected: " + expectedValue + " - Actual: " + actualValue);
+            System.out.println(ConsoleColors.GREEN + "[PASS] Expected: " + expectedValue + " - Actual: " + actualValue + ConsoleColors.RESET);
         } else {
-            System.err.println("[FAIL] Expected: " + expectedValue + " - Actual: " + actualValue);
+            System.err.println(ConsoleColors.RED + "[FAIL] Expected: " + expectedValue + " - Actual: " + actualValue + ConsoleColors.RESET);
         }
     }
 
