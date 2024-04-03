@@ -1,6 +1,7 @@
 package com.vn.service;
 
 import com.vn.model.leetcode.easy.IsomorphicStrings;
+import com.vn.model.leetcode.easy.ValidParentheses;
 
 public class LeetCodeService {
 
@@ -9,7 +10,7 @@ public class LeetCodeService {
     }
 
     private void easy() {
-        new IsomorphicStrings().run();
-
+//        new IsomorphicStrings().run();
+        new ValidParentheses().run();
     }
 }
