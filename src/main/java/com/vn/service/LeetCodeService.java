@@ -1,9 +1,6 @@
 package com.vn.service;
 
-import com.vn.model.leetcode.easy.IsomorphicStrings;
-import com.vn.model.leetcode.easy.SearchInsertPosition;
-import com.vn.model.leetcode.easy.TimeNeededToBuyTickets;
-import com.vn.model.leetcode.easy.ValidParentheses;
+import com.vn.model.leetcode.easy.*;
 
 public class LeetCodeService {
 
@@ -12,9 +9,10 @@ public class LeetCodeService {
     }
 
     private void easy() {
-//        new IsomorphicStrings().run();
+        // new IsomorphicStrings().run();
         // new ValidParentheses().run();
         // new SearchInsertPosition().run();
-        new TimeNeededToBuyTickets().run();
+        // new TimeNeededToBuyTickets().run();
+        // new MySqrt().run();
     }
 }
