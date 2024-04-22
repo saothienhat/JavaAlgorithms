@@ -14,6 +14,7 @@ public class LeetCodeService {
         // new SearchInsertPosition().run();
         // new TimeNeededToBuyTickets().run();
         // new MySqrt().run();
-        new LongestCommonPrefix().run();
+        // new LongestCommonPrefix().run();
+        new RemoveElement().run();
     }
 }
