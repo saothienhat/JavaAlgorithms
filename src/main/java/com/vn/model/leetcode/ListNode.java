@@ -24,32 +24,34 @@ public class ListNode {
         do {
             list.add(temp.val);
             temp = temp.next;
-            if(temp.next == null) {
+            if(temp != null && temp.next == null) {
                 list.add(temp.val);
             }
-        } while(temp.next != null);
+        } while(temp != null && temp.next != null);
         final StringBuffer sb = new StringBuffer();
         for(int i = 0; i < list.size(); i++) {
             sb.append(list.get(i)).append(" -> ");
         }
         System.out.println("ListNode: " + sb.toString());
     }
+
     public static void display(ListNode head) {
         ListNode temp = new ListNode(head.val, head.next);
         List<Integer> list = new ArrayList<>();
         do {
             list.add(temp.val);
             temp = temp.next;
-            if(temp.next == null) {
+            if(temp != null && temp.next == null) {
                 list.add(temp.val);
             }
-        } while(temp.next != null);
+        } while(temp != null && temp.next != null);
         final StringBuffer sb = new StringBuffer();
         for(int i = 0; i < list.size(); i++) {
             sb.append(list.get(i)).append(" -> ");
         }
         System.out.println("[INFO] ListNode: " + sb.toString());
     }
+
     public static ListNode createListNode(int[] values) {
         ListNode[] arr = new ListNode[values.length];
         for(int i = 0; i < values.length; i++) {
