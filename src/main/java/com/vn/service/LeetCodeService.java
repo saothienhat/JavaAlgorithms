@@ -16,8 +16,9 @@ public class LeetCodeService {
         // new MySqrt().run();
         // new LongestCommonPrefix().run();
          // new RemoveElement().run();
-//        new Merge2SortedLists().run();
+        // new Merge2SortedLists().run();
         // new LengthOfLastWord().run();
         // new PlusOne().run();
+        // new FindIndexOfFirstOccurrenceInString().run();
     }
 }
