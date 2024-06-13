@@ -20,5 +20,7 @@ public class LeetCodeService {
         // new LengthOfLastWord().run();
         // new PlusOne().run();
         // new FindIndexOfFirstOccurrenceInString().run();
+        // new RemoveDuplicatesFromSortedList().run();
+        // new AddBinary().run();
     }
 }
