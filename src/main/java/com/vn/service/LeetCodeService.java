@@ -13,7 +13,6 @@ public class LeetCodeService {
         // new ValidParentheses().run();
         // new SearchInsertPosition().run();
         // new TimeNeededToBuyTickets().run();
-        // new MySqrt().run();
         // new LongestCommonPrefix().run();
          // new RemoveElement().run();
         // new Merge2SortedLists().run();
@@ -22,5 +21,6 @@ public class LeetCodeService {
         // new FindIndexOfFirstOccurrenceInString().run();
         // new RemoveDuplicatesFromSortedList().run();
         // new AddBinary().run();
+        // new SqrtX().run();
     }
 }
