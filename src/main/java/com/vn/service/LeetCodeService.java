@@ -23,6 +23,7 @@ public class LeetCodeService {
         // new AddBinary().run();
         // new SqrtX().run();
         // new ClimbingStairs().run();
-        new BinaryTreeInorderTraversal().run();
+        // new BinaryTreeInorderTraversal().run();
+        new SameTree().run();
     }
 }

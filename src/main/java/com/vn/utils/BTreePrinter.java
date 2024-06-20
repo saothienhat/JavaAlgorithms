@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Ref: https://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram-in-java
+ */
 public class BTreePrinter {
     public static <T extends Comparable<?>> void displayTree(BinaryTreeNode<T> root) {
         int maxLevel = BTreePrinter.maxLevel(root);
