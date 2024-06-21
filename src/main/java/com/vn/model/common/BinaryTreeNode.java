@@ -3,9 +3,9 @@ package com.vn.model.common;
 
 public class BinaryTreeNode<T> {
     private int depth;
-    public T value;
-    public BinaryTreeNode<T> left;
-    public BinaryTreeNode<T> right;
+    private T value;
+    private BinaryTreeNode<T> left;
+    private BinaryTreeNode<T> right;
 
     public BinaryTreeNode() {
         this.depth = 0;
@@ -41,5 +41,37 @@ public class BinaryTreeNode<T> {
 
     public void display() {
         System.out.println("See detail at: BTreePrinter.displayExample()");
+    }
+
+    public int getDepth() {
+        return depth;
+    }
+
+    public void setDepth(int depth) {
+        this.depth = depth;
+    }
+
+    public T getValue() {
+        return value;
+    }
+
+    public void setValue(T value) {
+        this.value = value;
+    }
+
+    public BinaryTreeNode<T> getLeft() {
+        return left;
+    }
+
+    public void setLeft(BinaryTreeNode<T> left) {
+        this.left = left;
+    }
+
+    public BinaryTreeNode<T> getRight() {
+        return right;
+    }
+
+    public void setRight(BinaryTreeNode<T> right) {
+        this.right = right;
     }
 }

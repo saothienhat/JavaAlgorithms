@@ -31,9 +31,9 @@ public class BTreePrinter {
         List<BinaryTreeNode<T>> newNodes = new ArrayList<BinaryTreeNode<T>>();
         for (BinaryTreeNode<T> node : nodes) {
             if (node != null) {
-                System.out.print(node.value);
-                newNodes.add(node.left);
-                newNodes.add(node.right);
+                System.out.print(node.getValue());
+                newNodes.add(node.getLeft());
+                newNodes.add(node.getRight());
             } else {
                 newNodes.add(null);
                 newNodes.add(null);
@@ -52,14 +52,14 @@ public class BTreePrinter {
                     continue;
                 }
 
-                if (nodes.get(j).left != null)
+                if (nodes.get(j).getLeft() != null)
                     System.out.print("/");
                 else
                     BTreePrinter.printWhitespaces(1);
 
                 BTreePrinter.printWhitespaces(i + i - 1);
 
-                if (nodes.get(j).right != null)
+                if (nodes.get(j).getRight() != null)
                     System.out.print("\\");
                 else
                     BTreePrinter.printWhitespaces(1);
@@ -81,7 +81,7 @@ public class BTreePrinter {
     private static <T extends Comparable<?>> int maxLevel(BinaryTreeNode<T> node) {
         if (node == null)
             return 0;
-        return Math.max(BTreePrinter.maxLevel(node.left), BTreePrinter.maxLevel(node.right)) + 1;
+        return Math.max(BTreePrinter.maxLevel(node.getLeft()), BTreePrinter.maxLevel(node.getRight())) + 1;
     }
 
     private static <T extends Comparable<?>> int maxLevel(TreeNode node) {
@@ -118,22 +118,22 @@ public class BTreePrinter {
         BinaryTreeNode<Integer> n37 = new BinaryTreeNode<Integer>(5);
         BinaryTreeNode<Integer> n38 = new BinaryTreeNode<Integer>(8);
 
-        root.left = n11;
-        root.right = n12;
-
-        n11.left = n21;
-        n11.right = n22;
-        n12.left = n23;
-        n12.right = n24;
-
-        n21.left = n31;
-        n21.right = n32;
-        n22.left = n33;
-        n22.right = n34;
-        n23.left = n35;
-        n23.right = n36;
-        n24.left = n37;
-        n24.right = n38;
+//        root.left = n11;
+//        root.right = n12;
+//
+//        n11.left = n21;
+//        n11.right = n22;
+//        n12.left = n23;
+//        n12.right = n24;
+//
+//        n21.left = n31;
+//        n21.right = n32;
+//        n22.left = n33;
+//        n22.right = n34;
+//        n23.left = n35;
+//        n23.right = n36;
+//        n24.left = n37;
+//        n24.right = n38;
 
         displayTree(root);
     }

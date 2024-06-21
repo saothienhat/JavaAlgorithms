@@ -2,6 +2,7 @@ package com.vn.model.leetcode.easy;
 
 import com.vn.model.TestLevel;
 import com.vn.model.common.BinaryTreeNode;
+import com.vn.model.leetcode.LeetCodeBinaryTree;
 import com.vn.model.leetcode.LeetCodeTest;
 import com.vn.model.leetcode.TreeNode;
 import com.vn.utils.BTreePrinter;
@@ -31,7 +32,7 @@ public class SameTree extends LeetCodeTest {
         p.left = new TreeNode(2, LEVEL_1);
         p.right = null;
         new TreeNode(3, LEVEL_1);
-//        System.out.println("[INFO] displayAsString: " + p.displayAsString());
+        // new LeetCodeBinaryTree("P", p).displayAsPreOrder();
 
         // q = [1, 2, 3]
         TreeNode q = new TreeNode(1);
