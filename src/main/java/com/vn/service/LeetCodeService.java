@@ -24,6 +24,7 @@ public class LeetCodeService {
         // new SqrtX().run();
         // new ClimbingStairs().run();
         // new BinaryTreeInorderTraversal().run();
-        new SameTree().run();
+        // new SameTree().run();
+        new SymmetricTree().run();
     }
 }
