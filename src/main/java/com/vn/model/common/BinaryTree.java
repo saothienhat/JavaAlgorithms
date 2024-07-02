@@ -1,9 +1,9 @@
 package com.vn.model.common;
 
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import com.vn.model.leetcode.TreeNode;
+
+import java.util.*;
 
 public class BinaryTree<T> {
     private BinaryTreeNode<T> root;
@@ -71,6 +71,49 @@ public class BinaryTree<T> {
         traverseNodesAsPreOrder(sb, "", pointerRight, root.getRight(), false);
 
         return sb.toString();
+    }
+
+    public void breadthFirstSearch() {
+
+    }
+
+    // Function to print level order traversal of tree
+    private void printLevelOrder() {
+        int h = height(root);
+        for (int i = 1; i <= h; i++)
+            printCurrentLevel(root, i);
+    }
+    // Print nodes at the current level
+    private void printCurrentLevel(BinaryTreeNode<T> root, int level) {
+        if (root == null)
+            return;
+        if (level == 1)
+            System.out.print(root.getValue() + " ");
+        else if (level > 1) {
+            printCurrentLevel(root.getLeft(), level - 1);
+            printCurrentLevel(root.getRight(), level - 1);
+        }
+    }
+
+    /**
+     * Ref: https://www.geeksforgeeks.org/level-order-tree-traversal/
+     * Get the height of Tree
+     */
+    public int height() {
+        return height(root);
+    }
+
+    private int height(BinaryTreeNode<T> node) {
+        if (node == null)
+            return 0;
+        else {
+            // Compute  height of each subtree
+            int lheight = height(node.getLeft());
+            int rheight = height(node.getRight());
+
+            // use the larger one
+            return (lheight > rheight) ? (lheight + 1) : (rheight + 1);
+        }
     }
 
     /**
@@ -174,4 +217,32 @@ public class BinaryTree<T> {
         }
         return true;
     }
+
+    public Optional<BinaryTreeNode<T>> breadthFirstSearch(BinaryTreeNode<T> node, T value) {
+        if(node == null) return Optional.empty();
+
+        Queue<BinaryTreeNode<T>> queue = new ArrayDeque<>();
+        queue.add(node);
+        while(!queue.isEmpty()) {
+            BinaryTreeNode<T> currNode = queue.poll();
+            if(currNode == null) {
+                continue;
+            }
+
+            if(currNode.getValue() == value) {
+                return Optional.of(currNode);
+            } else {
+                queue.add(currNode.getLeft());
+                queue.add(currNode.getRight());
+            }
+        }
+        return Optional.empty();
+    }
+
+    /*
+    Depth First Traversals
+        Inorder Traversal (Left-Root-Right)
+        Preorder Traversal (Root-Left-Right)
+        Postorder Traversal (Left-Right-Root)
+     */
 }

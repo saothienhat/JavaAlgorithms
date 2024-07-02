@@ -2,6 +2,8 @@ package com.vn.model;
 
 import com.vn.utils.AppLogger;
 
+
+
 public class Test {
     private String name;
     private String level;
