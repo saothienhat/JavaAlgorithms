@@ -10,12 +10,12 @@ public class LeetCodeService {
 
     private void easy() {
         // new IsomorphicStrings().run();
-        // new ValidParentheses().run();
+//         new ValidParentheses().run();
         // new SearchInsertPosition().run();
         // new TimeNeededToBuyTickets().run();
         // new LongestCommonPrefix().run();
          // new RemoveElement().run();
-        // new Merge2SortedLists().run();
+//         new Merge2SortedLists().run();
         // new LengthOfLastWord().run();
         // new PlusOne().run();
         // new FindIndexOfFirstOccurrenceInString().run();
@@ -25,6 +25,8 @@ public class LeetCodeService {
         // new ClimbingStairs().run();
         // new BinaryTreeInorderTraversal().run();
         // new SameTree().run();
-        new SymmetricTree().run();
+//        new SymmetricTree().run();
+//        new TimeBuySellStock().run();
+//        new ValidPalindrome().run();
     }
 }
