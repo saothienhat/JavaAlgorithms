@@ -28,5 +28,6 @@ public class LeetCodeService {
 //        new SymmetricTree().run();
 //        new TimeBuySellStock().run();
 //        new ValidPalindrome().run();
+//        new SingleNumber().run();
     }
 }
