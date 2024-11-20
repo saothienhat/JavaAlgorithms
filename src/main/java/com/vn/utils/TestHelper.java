@@ -5,10 +5,9 @@ import com.vn.model.leetcode.ListNode;
 
 public final class TestHelper {
     public static ListNode createListNode(int[] values) {
-        ListNode head = ListNode.createListNode(values);
-        ListNode.display(head);
-        return head;
+        return ListNode.createListNode(values);
     }
+
     public static String display(int[] values) {
         final StringBuilder sb = new StringBuilder();
         sb.append("{ ");
