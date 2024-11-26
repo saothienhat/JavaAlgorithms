@@ -30,5 +30,6 @@ public class LeetCodeService {
 //        new ValidPalindrome().run();
 //        new SingleNumber().run();
         // new LinkedListCycle().run();
+//        new BalancedBinaryTree().run();
     }
 }

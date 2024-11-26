@@ -112,7 +112,8 @@ public class BinaryTree<T> {
             int rheight = height(node.getRight());
 
             // use the larger one
-            return (lheight > rheight) ? (lheight + 1) : (rheight + 1);
+//            return (lheight > rheight) ? (lheight + 1) : (rheight + 1);
+            return Math.max(lheight,rheight) + 1;
         }
     }
 
