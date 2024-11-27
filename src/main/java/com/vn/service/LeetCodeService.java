@@ -31,5 +31,6 @@ public class LeetCodeService {
 //        new SingleNumber().run();
         // new LinkedListCycle().run();
 //        new BalancedBinaryTree().run();
+        // new MinimumDepthBinaryTree().run();
     }
 }
