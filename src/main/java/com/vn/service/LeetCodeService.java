@@ -32,5 +32,6 @@ public class LeetCodeService {
         // new LinkedListCycle().run();
 //        new BalancedBinaryTree().run();
         // new MinimumDepthBinaryTree().run();
+        // new PascalTriangle().run();
     }
 }
