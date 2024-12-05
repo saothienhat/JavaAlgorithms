@@ -33,5 +33,7 @@ public class LeetCodeService {
 //        new BalancedBinaryTree().run();
         // new MinimumDepthBinaryTree().run();
         // new PascalTriangle().run();
+        // new ExcelSheetColumnTitle().run();
+        // new MajorityElement().run();
     }
 }
